@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Counseling</title>
+  </head>
+  <body>
+
+
+    <header className="container">
+      <Link className="brand" to="/"><span>Martha Webb, LCSW</span> Psychotherapy</Link>
+      <div className="nav-toggle" onClick = {handleNavToggle}>
+        <div className="line line-1"></div>
+        <div className="line line-2"></div>
+        <div className="line line-3"></div>
+      </div>
+      <nav>
+        <Link onClick={handleNavClose} to="/">Welcome</Link>
+        <Link onClick={handleNavClose} to="/individual-counseling">Individual Counseling</Link>
+        <Link onClick={handleNavClose} to="/group-therapy" >Group Therapy</Link>
+        <Link onClick={handleNavClose} to="/contact" >Contact</Link>
+      </nav>
+    </header>
+
+    <div className="banner" >
+      <div className="banner-cta" >
+        <p className="banner-description">{description}</p>
+        <Link className="button" to="/contact">{cta}</Link>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+<footer>
+      <ul className="info-list">
+        <li>
+          <strong>Martha S. Webb</strong><br/>
+          4025 Camino del Rio S<br />
+          Suite #300<br/>
+          San Diego, CA 92108
+        </li>
+        <li>
+          <div><strong>Phone Number</strong><br/>
+          (619) 542-7727 <br />
+          </div>
+          <div className="footer-email">
+            <strong>Email</strong><br />
+            mswbb1@yahoo.com
+          </div>
+        </li>
+      </ul>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
