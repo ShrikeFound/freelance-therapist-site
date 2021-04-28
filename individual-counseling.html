@@ -4,30 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Individual Counseling</title>
   </head>
   <body>
 
 
-    <header className="container">
-      <Link className="brand" to="/"><span>Martha Webb, LCSW</span> Psychotherapy</Link>
-      <div className="nav-toggle" onClick = {handleNavToggle}>
-        <div className="line line-1"></div>
-        <div className="line line-2"></div>
-        <div className="line line-3"></div>
+    <header class="container">
+      <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
+      <div class="nav-toggle" onClick={handleNavToggle}>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
       </div>
       <nav>
-        <Link onClick={handleNavClose} to="/">Welcome</Link>
-        <Link onClick={handleNavClose} to="/individual-counseling">Individual Counseling</Link>
-        <Link onClick={handleNavClose} to="/group-therapy" >Group Therapy</Link>
-        <Link onClick={handleNavClose} to="/contact" >Contact</Link>
+        <a onClick="{handleNavClose}" href="/">Welcome</a>
+        <a onClick="{handleNavClose}" href="individual-counseling.html">Individual Counseling</a>
+        <a onClick="{handleNavClose}" href="/group-therapy.html">Group Therapy</a>
+        <a onClick="{handleNavClose}" href="/contact.html">Contact</a>
       </nav>
     </header>
 
-    <div className="banner" >
-      <div className="banner-cta" >
-        <p className="banner-description">{description}</p>
-        <Link className="button" to="/contact">{cta}</Link>
+    <div class="banner" >
+      <div class="banner-cta" >
+        <p class="banner-description">{description}</p>
+        <Link class="button" to="/contact">{cta}</Link>
       </div>
 
     </div>
@@ -40,7 +42,7 @@
 
 
 <footer>
-      <ul className="info-list">
+      <ul class="info-list">
         <li>
           <strong>Martha S. Webb</strong><br/>
           4025 Camino del Rio S<br />
@@ -51,7 +53,7 @@
           <div><strong>Phone Number</strong><br/>
           (619) 542-7727 <br />
           </div>
-          <div className="footer-email">
+          <div class="footer-email">
             <strong>Email</strong><br />
             mswbb1@yahoo.com
           </div>
