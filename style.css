@@ -96,16 +96,17 @@ nav a {
   display: block;
   width: 100%;
   text-decoration: none;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .nav-toggle {
   position: absolute;
   right: 0;
-  top: 2.3rem;
-  width: 2rem;
-  height: 2rem;
+  top: 2rem;
+  width: 2.5rem;
+  height: 2.4rem;
   cursor: pointer;
+  padding: 0.4rem;
 }
 
 .hidden {
@@ -238,7 +239,7 @@ main {
   font-size: 16px;
   font-family: inherit;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: -0.5rem;
   font-weight: 400;
 }
 
@@ -265,6 +266,21 @@ main {
 .welcome.banner {
   background-image: url("images/group.jpg");
   background-position: 50% 34%;
+}
+
+.individual-counseling.banner {
+  background-image: url("images/smiling.jpg");
+  background-position: 50% 34%;
+}
+
+.group-therapy.banner {
+  background-image: url("images/group.jpg");
+  background-position: 50% 34%;
+}
+
+.contact.banner {
+  background-image: url("images/laptop.jpg");
+  background-position: 30% 45%;
 }
 
 .text-column .button {
@@ -452,4 +468,35 @@ textarea {
 
 .text-container {
   max-width: 40ch;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+#nav {
+  transition-property: transform, opacity;
+  transition-duration: 250ms, 200ms;
+  transition-delay: 0s, 100ms;
+  transition-timing-function: ease-in-out;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(var(--white), 1);
+  left: 0;
+  right: 0;
+  transform: scale(1, 1);
+  transform-origin: top;
+  opacity: 1;
+}
+#nav.closed {
+  transform: scale(1, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-delay: 0s, 0s;
+}
+
+@media only screen and (min-width: 1100px) {
+  #nav {
+    position: relative;
+  }
 }

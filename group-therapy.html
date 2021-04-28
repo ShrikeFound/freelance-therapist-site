@@ -9,38 +9,80 @@
     <title>Group Therapy</title>
   </head>
   <body>
-
-<header class="container">
-  <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
-  <div class="nav-toggle" onClick={handleNavToggle}>
-    <div class="line line-1"></div>
-    <div class="line line-2"></div>
-    <div class="line line-3"></div>
-  </div>
-  <nav>
-    <a onClick="{handleNavClose}" href="/">Welcome</a>
-    <a onClick="{handleNavClose}" href="individual-counseling.html">Individual Counseling</a>
-    <a onClick="{handleNavClose}" href="/group-therapy.html">Group Therapy</a>
-    <a onClick="{handleNavClose}" href="/contact.html">Contact</a>
-  </nav>
-</header>
-
-    <div class="banner" >
-      <div class="banner-cta" >
-        <p class="banner-description">{description}</p>
-        <Link class="button" to="/contact">{cta}</Link>
+    <header class="container">
+      <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
+      <div class="nav-toggle" onClick="handleNavToggle()">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
       </div>
+      <nav>
+        <a href="/">Welcome</a>
+        <a href="individual-counseling">Individual Counseling</a>
+        <a class="active" href="group-therapy">Group Therapy</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </header>
 
+    <div class="group-therapy banner">
+      <div class="banner-cta">
+        <p class="banner-description">
+          Helping You Increase Trust, Intimacy, and Connection in Your
+          Relationship
+        </p>
+        <a class="button" href="contact">Schedule a Session</a>
+      </div>
     </div>
 
+    <main>
+      <h2 class="subtitle">Group Therapy</h2>
+      <h1 class="title">Life Management Skills</h1>
 
+      <section class="row container">
+        <div class="text-column group-therapy">
+          <p>
+            I facilitate a stress management group based on the three pronged
+            approach to self care: the <b>cognitive</b> approach,
+            <b>relaxation</b> skills, and <b>expression</b> of positive into
+            your life and negative out of your life.
+          </p>
+          <p>
+            Utilizing the three pronged approach in the group you will learn to
+            cope with challenges, manage your feelings, as well as make life
+            goals. The group’s support and encouragement will help you achieve
+            them as well.
+          </p>
+          <a class="button secondary" href="contact">Email Me</a>
+        </div>
 
+        <div class="frame">
+          <img
+            alt="six people on a mountain in front of a sunset raising their hands in a peace sign"
+            src="images/sunset.jpg"
+          />
+        </div>
+      </section>
+    </main>
 
-
-
-
-
-
-
+    <footer>
+      <ul class="info-list">
+        <li>
+          <strong>Martha S. Webb</strong><br />
+          4025 Camino del Rio S<br />
+          Suite #300<br />
+          San Diego, CA 92108
+        </li>
+        <li>
+          <div>
+            <strong>Phone Number</strong><br />
+            (619) 542-7727 <br />
+          </div>
+          <div class="footer-email">
+            <strong>Email</strong><br />
+            mswbb1@yahoo.com
+          </div>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

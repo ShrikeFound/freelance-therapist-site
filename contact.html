@@ -9,34 +9,90 @@
     <title>Contact Me</title>
   </head>
   <body>
-
-<header class="container">
-  <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
-  <div class="nav-toggle" onClick={handleNavToggle}>
-    <div class="line line-1"></div>
-    <div class="line line-2"></div>
-    <div class="line line-3"></div>
-  </div>
-  <nav>
-    <a onClick="{handleNavClose}" href="/">Welcome</a>
-    <a onClick="{handleNavClose}" href="individual-counseling.html">Individual Counseling</a>
-    <a onClick="{handleNavClose}" href="/group-therapy.html">Group Therapy</a>
-    <a onClick="{handleNavClose}" href="/contact.html">Contact</a>
-  </nav>
-</header>
-
-    <div class="banner" >
-      <div class="banner-cta" >
-        <p class="banner-description">{description}</p>
-        <Link class="button" to="/contact">{cta}</Link>
+    <header class="container">
+      <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
+      <div class="nav-toggle" onClick="handleNavToggle()">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
       </div>
+      <nav>
+        <a href="/">Welcome</a>
+        <a href="individual-counseling">Individual Counseling</a>
+        <a href="group-therapy">Group Therapy</a>
+        <a class="active" href="contact">Contact</a>
+      </nav>
+    </header>
 
-    </div>
+    <div class="contact banner"></div>
 
+    <main>
+      <section class="container">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-description text-container">
+          <p>
+            Please give me a call at (619) 542-7727 for a free phone
+            consultation. You can also reach me by email at mswbb1@yahoo.com.
+          </p>
+          <p>
+            Please share any information you think is important. Please also
+            mention whether you would like in-person or telehealth sessions.
+          </p>
+        </div>
+        <!-- {/*
+        <form
+          class="contact-form"
+          action="https://fieldgoal.io/f/X3qjIM"
+          method="POST"
+        >
+          <div class="contact-description">
+            <p>
+              To get in touch and schedule a session, you can call or email me.
+              You can also use the form below.
+            </p>
+            <p>
+              Please share any information you think is important. Please also
+              mention whether you would like in-person or tele-health sessions.
+            </p>
+          </div>
+          <div>
+            <label for="email">Your Email</label>
+            <input name="Email" id="email" type="email" />
+            <label for="email">Your Name</label>
+            <input name="Name" id="name" type="text" />
+            <label for="message">Your Message</label>
+            <textarea
+              name="message"
+              rows="6"
+              cols="50"
+              placeholder="write a brief message..."
+            ></textarea>
+            <button class="button" type="submit">Submit</button>
+          </div>
+        </form>
+        */} -->
+      </section>
+    </main>
 
-
-
-
-
+    <footer>
+      <ul class="info-list">
+        <li>
+          <strong>Martha S. Webb</strong><br />
+          4025 Camino del Rio S<br />
+          Suite #300<br />
+          San Diego, CA 92108
+        </li>
+        <li>
+          <div>
+            <strong>Phone Number</strong><br />
+            (619) 542-7727 <br />
+          </div>
+          <div class="footer-email">
+            <strong>Email</strong><br />
+            mswbb1@yahoo.com
+          </div>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

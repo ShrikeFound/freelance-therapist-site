@@ -11,16 +11,16 @@
   <body>
     <header class="container">
       <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
-      <div class="nav-toggle" onClick={handleNavToggle}>
+      <div class="nav-toggle" onClick="handleNavToggle()">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
       </div>
-      <nav>
-        <a onClick="{handleNavClose}" href="/">Welcome</a>
-        <a onClick="{handleNavClose}" href="individual-counseling.html">Individual Counseling</a>
-        <a onClick="{handleNavClose}" href="/group-therapy.html">Group Therapy</a>
-        <a onClick="{handleNavClose}" href="/contact.html">Contact</a>
+      <nav id="nav">
+        <a class="active" href="/">Welcome</a>
+        <a href="individual-counseling">Individual Counseling</a>
+        <a href="group-therapy">Group Therapy</a>
+        <a href="contact">Contact</a>
       </nav>
     </header>
 
@@ -64,7 +64,7 @@
             then I am the therapist for you. Let’s work together to solve your
             life’s challenges. The joy is in the solving!
           </p>
-          <a class="button secondary" href="/contact">Email Me</a>
+          <a class="button secondary" href="contact">Email Me</a>
         </div>
       </section>
 
@@ -76,7 +76,7 @@
             Learn to live in the moment instead of dwelling on the past or
             worrying about the future.
           </p>
-          <a class="button" to="{to}">Learn More</a>
+          <a class="button" to="contact">Learn More</a>
         </div>
 
         <div class="card">
@@ -85,7 +85,7 @@
           <p class="card-description">
             Regain your energy, your happiness, and your life.
           </p>
-          <a class="button" to="{to}">Learn More</a>
+          <a class="button" to="contact">Learn More</a>
         </div>
 
         <div class="card">
@@ -95,7 +95,7 @@
             learn how to cope with life's daily activities, manage our hurts and
             griefs, and work towards our goals.
           </p>
-          <a class="button" href="{to}">Learn More</a>
+          <a class="button" href="group-therapy">Learn More</a>
         </div>
       </section>
     </main>

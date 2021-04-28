@@ -9,49 +9,75 @@
     <title>Individual Counseling</title>
   </head>
   <body>
-
-
     <header class="container">
       <a class="brand" href="/"><span>Martha Webb, LCSW</span> Psychotherapy</a>
-      <div class="nav-toggle" onClick={handleNavToggle}>
+      <div class="nav-toggle" onClick="handleNavToggle()">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
       </div>
       <nav>
-        <a onClick="{handleNavClose}" href="/">Welcome</a>
-        <a onClick="{handleNavClose}" href="individual-counseling.html">Individual Counseling</a>
-        <a onClick="{handleNavClose}" href="/group-therapy.html">Group Therapy</a>
-        <a onClick="{handleNavClose}" href="/contact.html">Contact</a>
+        <a href="/">Welcome</a>
+        <a class="active" href="individual-counseling.html"
+          >Individual Counseling</a
+        >
+        <a href="group-therapy">Group Therapy</a>
+        <a href="contact">Contact</a>
       </nav>
     </header>
 
-    <div class="banner" >
-      <div class="banner-cta" >
-        <p class="banner-description">{description}</p>
-        <Link class="button" to="/contact">{cta}</Link>
+    <div class="individual-counseling banner">
+      <div class="banner-cta">
+        <p class="banner-description">
+          Self care that fills you back up with what life takes out.
+        </p>
+        <a class="button" href="/contact">Schedule a Session</a>
       </div>
-
     </div>
 
+    <main>
+      <h1 class="title">Individual Counseling</h1>
 
+      <section class="row container">
+        <div class="column">
+          <p>
+            I believe we could all use help sometimes, so I will be there to
+            listen and empathize. I will also work as a coach to help you do
+            self care that fills you back up with what life takes out.
+          </p>
+          <p>
+            I have developed what I call the three pronged approach to self
+            care, which is cognitive, relaxation and expression. I will educate
+            you in terms of certain thought patterns you can change, so you will
+            think in a way that makes you feel better. Then I will encourage
+            relaxation techniques you will use that you choose, as we are all
+            different in terms of what we find relaxing. I will also encourage
+            you to make your life what you want it to be and let go of what does
+            not serve you.
+          </p>
+          <a class="button secondary mx-auto" href="contact">Email Me</a>
+        </div>
+        <div class="frame">
+          <img
+            alt="six people on a mountain in front of a sunset raising their hands in a peace sign"
+            src="images/door.jpg"
+          />
+        </div>
+      </section>
+    </main>
 
-
-
-
-
-
-<footer>
+    <footer>
       <ul class="info-list">
         <li>
-          <strong>Martha S. Webb</strong><br/>
+          <strong>Martha S. Webb</strong><br />
           4025 Camino del Rio S<br />
-          Suite #300<br/>
+          Suite #300<br />
           San Diego, CA 92108
         </li>
         <li>
-          <div><strong>Phone Number</strong><br/>
-          (619) 542-7727 <br />
+          <div>
+            <strong>Phone Number</strong><br />
+            (619) 542-7727 <br />
           </div>
           <div class="footer-email">
             <strong>Email</strong><br />
@@ -59,19 +85,6 @@
           </div>
         </li>
       </ul>
-
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
